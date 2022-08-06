@@ -9,6 +9,6 @@ app.use(express.urlencoded({extended:true}))
 
 app.use('/',accountRoute)
 
+const PORT = process.env.PORT || 3000
 
-
-app.listen(3000,()=>console.log('server running on post 3000'))
+app.listen(PORT,()=>console.log('server running on post 3000'))
